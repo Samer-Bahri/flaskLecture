@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Website</title>
-  </head>
-  <body>
-    {% if new_year %}
-      <h1>Yes!</h1>
-    {% else %}
-      <h1>No!</h1>
-    {% endif %}
-  </body>
-</html>
+{% extends "layout.html" %}
+
+{% block heading %}
+  First Page
+{% endblock %}
+
+{% block body %}
+
+  <p>
+    first page
+  </p>
+
+  <a href = "{{url_for('more') }}"> See next...</a>
+
+{% endblock %}
