@@ -4,6 +4,10 @@
     <title>My Website</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    {% if new_year %}
+      <h1>Yes!</h1>
+    {% else %}
+      <h1>No!</h1>
+    {% endif %}
   </body>
 </html>
